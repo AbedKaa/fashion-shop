@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/addproduct.css">
+    <title>Become a Seller</title>
+    
+</head>
+<body>
+    <div class="container">
+		<h1>Add New Card</h1>
+		<form>
+			<input type="text" id="title" placeholder="Enter Product title...">
+			<input type="text" id="description" placeholder="Enter Product description...">
+			<input type="number" id="stars-rating" min="0" max="5" placeholder="Enter stars rating...">
+			<input type="file" id="image" placeholder="Enter Product Image" onchange="readurl(this);">
+            <input type="price" id="price" placeholder="Enter Product price ">
+            <input type="button" id="add-card" value="Add Product" onClick="addCard()">
+			<input type="button" id="back-btn" value="Back to used store" onClick="location.href='useditem.html'">
+		</form>
+		
+	</div>
+		
+	</div>
+    <div class="alert-box">
+        <img src="images/error-circle.png" class="alert-img" alt="">
+        <p class="alert-msg">Error message</p>
+    </div>
+	<script src="js/addproduct.js"></script>
+</body>
+</html>

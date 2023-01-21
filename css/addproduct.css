@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+.container{
+    width: 600px;
+    margin: 50px auto;
+}
+
+form input
+{
+    width: 100%;
+    border-radius: 5px;
+    padding: 8px;
+    font-size: 18px;
+    background-color: #FFFFFF;
+    border: 2px solid #25afd2;
+    color: #0a647c;
+    margin-bottom: 20px;
+}
+
+form input:focus{
+    outline: none;
+    border: 2px solid #FF0000;
+}
+
+#add-card{
+    border-radius: 5px;
+    padding: 8px 128px;
+    font-size: 18px;
+    background-color: #25afd2;
+    border: 2px solid #25afd2;
+    color: #FFFFFF;
+}
+
+#add-card:hover{
+    cursor: pointer;
+    background-color: #FFFFFF;
+    border: 2px solid #25afd2;
+    color: #25afd2;
+}
+
+#back-btn{
+    border-radius: 5px;
+    padding: 8px 128px;
+    font-size: 18px;
+    background-color: #FFFFFF;
+    border: 2px solid #25afd2;
+    color: #25afd2;
+}
+
+#back-btn:hover{
+    cursor: pointer;
+    background-color: #25afd2;
+    border: 2px solid #25afd2;
+    color: #FFFFFF;
+}
+
+.container > h1{
+    margin-bottom: 40px;
+    text-align: center;
+    color: #0a647c;
+    font-size: 42px;
+}
+.alert-box{
+    width: 300px;
+    min-height: 150px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 100px rgba(0, 0, 0, 0.05);
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    opacity: 0;
+    pointer-events: none;
+    transition: 1s;
+}
+
+.alert-box.show{
+    opacity: 1;
+    pointer-events: all;
+    top: 50%;
+}
+.alert-img{
+    display: block;
+    margin: 10px auto 20px;
+    height: 60px;
+}
+
+.alert-msg{
+    color: #e24c4b;
+    font-size: 20px;
+    text-align: center;
+    line-height: 30px;
+    font-weight: 500;
+}

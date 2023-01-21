@@ -1,0 +1,109 @@
+@import 'nav.css';
+@import 'footer.css';
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+	
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+.container{
+    width: 80%;
+    margin: 50px auto;
+}
+
+
+.container p{
+    margin-bottom: 12px;
+    font-size: 20px;
+}
+
+.container p label{
+    font-weight: bold;
+    color: #0a647c;
+}
+
+
+.container button{
+    margin-top: 25px;
+    width: 100%;
+    border-radius: 5px;
+    padding: 8px 128px;
+    font-size: 18px;
+    background-color: #25afd2;
+    border: 2px solid #25afd2;
+    color: #FFFFFF;
+}
+
+	
+	#card-list{
+		display: flex;
+		gap: 20px;
+		flex-wrap: wrap;		
+		margin-bottom: 20px;
+	}
+	
+	.container button{
+		border-radius: 5px;
+		padding: 8px 128px;
+		font-size: 18px;
+		background-color: #25afd2;
+		border: 2px solid #25afd2;
+		color: #FFFFFF;
+	}
+
+	.container button:hover{
+		cursor: pointer;
+		background-color: #FFFFFF;
+		border: 2px solid #25afd2;
+		color: #25afd2;
+	}
+	
+	.card{
+		width: 25%;
+		min-width: 300px ;
+        border: 2px solid #25afd2;
+		border-radius: 8px;
+		padding: 10px;
+		color: #0a647c;
+	}
+	
+	.card h1{
+		font-size: 28px;
+		text-align: center;
+		margin-bottom: 10px;
+	}
+	
+	.card h1 a{
+		text-decoration: none;
+		color: #0a647c;
+	}
+	
+	.card h1 a:hover{
+		text-decoration: underline;
+		
+	}
+	
+	.card p{
+		font-size: 16px;
+		margin-bottom: 10px;
+	}
+	
+	.stars-rating {
+		color: #25afd2;
+		display: flex;
+		justify-content: flex-end;
+	}
+	
+	.container > h1{
+		margin-bottom: 40px;
+		text-align: center;
+		color: #0a647c;
+		font-size: 42px;
+	}
